@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to my site</title>
+	<link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body>
+	<div class="container">
+		<h1>Welcome to my site</h1>
+		<p>Please sign in or sign up to continue</p>
+		<a href="{% url 'login' %}" class="button">Sign In</a>
+		<a href="{% url 'register' %}" class="button">Sign Up</a>
+	</div>
+</body>
+</html>
